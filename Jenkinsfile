@@ -15,7 +15,7 @@ pipeline {
 	
     environment {
 
-        
+        ARTVERSION = "${env.BUILD_ID}"
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         SNAP_REPO = "Cz-snapshot"
@@ -108,7 +108,7 @@ pipeline {
                             protocol: "${NEXUS_PROTOCOL}",
                             nexusUrl: "${NEXUSIP}:${NEXUSPORT}",
                             groupId: "${NEXUS_GRP_REPO}",
-                            version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
+                            version: "${ARTVERSION}",
                             repository: "${RELEASE_REPO}",
                             credentialsId: "${NEXUS_LOGIN}",
                             artifacts: [
