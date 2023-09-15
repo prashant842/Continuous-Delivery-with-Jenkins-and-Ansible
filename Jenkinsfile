@@ -14,6 +14,8 @@ pipeline {
     }
 	
     environment {
+
+        
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         SNAP_REPO = "Cz-snapshot"
@@ -27,7 +29,10 @@ pipeline {
         NEXUS_LOGIN = "nexuslogin"
         SONARSERVER = "sonarserver"
         SONARSCANNER = "sonarscanner"
+
         
+
+
     }
 	
     stages{
@@ -115,7 +120,9 @@ pipeline {
                         )
                    }
             }
-            stage('Ansible Deploy to staging'){
+        }
+
+        stage('Ansible Deploy to staging'){
             steps {
                 ansiblePlaybook([
                 inventory   : 'ansible/stage.inventory',
@@ -149,7 +156,7 @@ pipeline {
                 message: "${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
             )
 
-         }
-     }
-   }
- }
+        }
+    }
+
+}
