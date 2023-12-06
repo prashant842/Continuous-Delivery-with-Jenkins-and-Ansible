@@ -23,7 +23,7 @@ pipeline {
         NEXUS_PASS = "cznexus"
         RELEASE_REPO = "Cz-release"
         CENTRAL_REPO = "Cz-maven-central"
-        NEXUSIP = "172.31.43.110"
+        NEXUSIP = "172.31.42.119"
         NEXUSPORT = "8081"
         NEXUS_GRP_REPO = "Cz-maven-group"
         NEXUS_LOGIN = "nexuslogin"
