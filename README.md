@@ -1,6 +1,6 @@
-##Continuous Delivery with Jenkins and Ansible
+###Continuous Delivery with Jenkins and Ansible
 
-In this demo Jenkins Pipeline automates the end-to-end software delivery process, 
+- In this demo Jenkins Pipeline automates the end-to-end software delivery process, 
 encompassing Continuous Integration (CI) and Continuous Deployment (CD) stages. 
 Leveraging Maven for building, SonarQube for code analysis, and Nexus Repository 
 for artifact management, it ensures high-quality code by executing unit and 
