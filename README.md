@@ -1,3 +1,18 @@
+##Continuous Delivery with Jenkins and Ansible
+
+In this demo Jenkins Pipeline automates the end-to-end software delivery process, 
+encompassing Continuous Integration (CI) and Continuous Deployment (CD) stages. 
+Leveraging Maven for building, SonarQube for code analysis, and Nexus Repository 
+for artifact management, it ensures high-quality code by executing unit and 
+integration tests while enforcing code standards through Checkstyle. The same 
+pipeline will install Tomcat on an AWS EC2 instance, downloads artifacts from a 
+Nexus repository, and deploys them onto the Tomcat EC2 server.
+
+![image](https://github.com/prashant842/Continuous-Delivery-with-Jenkins-and-Ansible/assets/110713882/6225f434-544f-4430-95e1-7a5f8ebbdb55)
+
+
+
+
 ###
 ### Prerequisites
 - JDK 1.8 or later
